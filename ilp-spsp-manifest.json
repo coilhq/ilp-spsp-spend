@@ -1,0 +1,15 @@
+{
+  "manifest": {
+    "name": "ilp-spsp-server",
+    "version": "1.0.5",
+    "machine": "small",
+    "port": "8080",
+    "containers": [{
+      "id": "app",
+      "image": "sharafian/ilp-spsp-server"
+    }, {
+      "id": "spend",
+      "image": "sharafian/ilp-spsp-spender"
+    }]
+  }
+}
