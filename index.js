@@ -7,7 +7,7 @@ async function run () {
   while (true) {
     try {
       await SPSP.pay(plugin, {
-        receiver: '$spsp.ilp-test.com',
+        receiver: process.env.PAYMENT_POINTER || '$spsp.ilp-test.com',
         sourceAmount: '10'
       })
       console.log('sent!')
